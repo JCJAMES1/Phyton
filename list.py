@@ -10,7 +10,7 @@ while True:
 
     choice = input("Enter your choice (1-5): ")
 
-    # SHOW USERS
+    
     if choice == "1":
         if len(users) == 0:
             print("No users found.")
@@ -19,13 +19,13 @@ while True:
             for i in range(len(users)):
                 print(f"{i + 1}. {users[i]}")
 
-    # ADD USER
+    
     elif choice == "2":
         new_user = input("Enter new user name: ")
         users.append(new_user)
         print("User added successfully.")
 
-    # UPDATE USER
+    
     elif choice == "3":
         if len(users) == 0:
             print("No users to update.")
@@ -40,7 +40,7 @@ while True:
             else:
                 print("Invalid number.")
 
-    # DELETE USER
+    
     elif choice == "4":
         if len(users) == 0:
             print("No users to delete.")
@@ -54,7 +54,7 @@ while True:
             else:
                 print("Invalid number.")
 
-    # EXIT
+    
     elif choice == "5":
         print("Exiting program...")
         break
